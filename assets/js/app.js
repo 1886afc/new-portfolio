@@ -7,14 +7,14 @@ var barChart = new Chart (CHART, {
         labels: ["JavaScript", "CSS", "HTML", "NODE.js", "MySQL", "PHP"],
         datasets: [{
             label: 'XP Skill %',
-            data: [60, 50, 60, 30, 25, 10],
+            data: [60, 50, 60, 30, 25, 15],
             backgroundColor: [
-                'rgba(152, 7, 5, 0.7)',
-                'rgba(175, 183, 4, 0.7)',
-                'rgba(22, 145, 53, 0.7)',
-                'rgba(8, 45, 113, 0.8)',
-                'rgba(113, 8, 45, 0.8)',
-                'rgba(206, 83, 7, 0.8)'
+                'rgba(152, 7, 5, 0.5)',
+                'rgba(175, 183, 4, 0.5)',
+                'rgba(22, 145, 53, 0.5)',
+                'rgba(8, 45, 113, 0.5)',
+                'rgba(113, 8, 45, 0.5)',
+                'rgba(206, 83, 7, 0.5)'
 
             ],
             // borderColor: [
@@ -37,7 +37,7 @@ var barChart = new Chart (CHART, {
                     callback: function (value, index, values) {
                         return 'XP ' + value + '%';
                     },
-                    maxTicksLimit: 5,
+                    maxTicksLimit: 10,
                     suggestedMax: 100
                 },
                 gridLines: {
