@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #aboutwrap {	
-	background: url(../img/about.jpg) no-repeat center top;
+	background: grey;
 	margin-top: -70px;
 	padding-top: 100px;
 	text-align:center;
@@ -221,6 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-position: center center;
 	min-height: 550px;
 	width: 100%;
+    height: 50%;
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -231,6 +232,15 @@ h1, h2, h3, h4, h5, h6 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+#me {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+
 }
 
 
