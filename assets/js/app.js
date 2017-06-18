@@ -1,5 +1,5 @@
 const CHART = document.getElementById("barChart");
-console.log(CHART);
+
 
 var barChart = new Chart (CHART, {
     type: 'bar',
@@ -15,6 +15,7 @@ var barChart = new Chart (CHART, {
                 'rgba(8, 45, 113, 0.8)',
                 'rgba(113, 8, 45, 0.8)',
                 'rgba(206, 83, 7, 0.8)'
+
             ],
             borderColor: [
                 'rgba(#613232)',
@@ -23,6 +24,7 @@ var barChart = new Chart (CHART, {
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
+
             ],
             borderWidth: 2
         }]
@@ -31,7 +33,11 @@ var barChart = new Chart (CHART, {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero:true
+                    beginAtZero:true,
+                    callback: function (value, index, values) {
+                        return 'XP ' + value + '%';
+                    }
+
                 }
             }]
         }
