@@ -1,13 +1,13 @@
 const CHART = document.getElementById("barChart");
 
-
+Chart.defaults.global.defaultFontColor = 'gray';
 var barChart = new Chart (CHART, {
     type: 'bar',
     data: {
         labels: ["JavaScript", "CSS", "HTML", "NODE.js", "MySQL", "PHP"],
         datasets: [{
-            label: 'XP',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'XP Skill %',
+            data: [60, 50, 60, 30, 25, 10],
             backgroundColor: [
                 'rgba(152, 7, 5, 0.7)',
                 'rgba(175, 183, 4, 0.7)',
@@ -36,10 +36,17 @@ var barChart = new Chart (CHART, {
                     beginAtZero:true,
                     callback: function (value, index, values) {
                         return 'XP ' + value + '%';
-                    }
+                    },
+                    maxTicksLimit: 5,
+                    suggestedMax: 100
 
                 }
             }]
+        },
+        legend: {
+            labels: {
+
+            }
         }
     }
 });
