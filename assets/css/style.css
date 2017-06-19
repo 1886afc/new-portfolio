@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #aboutwrap {	
-	background: grey;
+	background: url(../img/about.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 100px;
 	text-align:center;
