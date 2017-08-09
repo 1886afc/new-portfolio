@@ -4,10 +4,10 @@ Chart.defaults.global.defaultFontColor = 'gray';
 var barChart = new Chart (CHART, {
     type: 'bar',
     data: {
-        labels: ["JavaScript", "CSS", "HTML", "NODE.js", "MySQL", "PHP"],
+        labels: ["JavaScript", "CSS", "HTML", "NODE.js", "MySQL", "PHP Laravel"],
         datasets: [{
             label: 'XP Skill %',
-            data: [60, 50, 60, 30, 25, 15],
+            data: [60, 50, 60, 30, 25, 50],
             backgroundColor: [
                 'rgba(152, 7, 5, 0.5)',
                 'rgba(175, 183, 4, 0.5)',
